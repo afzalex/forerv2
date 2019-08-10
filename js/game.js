@@ -519,7 +519,7 @@ Menu.prototype = {
 		else if (language === 'de') {str_sub = "BOHRER\nHASE"; str_prs = "Presseraum"; small = true;}
 		else if (language === 'it') {str_sub = "TRAPANO\nCONIGLIO"; str_prs = "Spazio Stampa"; small = true;}
 		else if (language === 'ja') {str_sub = "\u30C9\u30EA\u30EB\u30D0\u30CB\u30FC"; str_prs = "\u30D7\u30EC\u30B9\u958B\u59CB"; small = true;}
-		else { str_sub = 'DRILL\nBUNNY'; str_prs = 'Press Space!';}
+		else { str_sub = 'RAGINI\nKokoMoko'; str_prs = 'Press Space!';}
 		
 		// This breaks localization :(
 		
@@ -595,18 +595,18 @@ Menu.prototype = {
 		this.ground.scale.x = 2;
 		this.ground.scale.y = 2;
 		
-		this.title = this.game.add.text(8,8,'Chacket\nValleyparker:', {fill : 'red'});
+		this.title = this.game.add.text(8,8,'For the girl\nwith Best hairs', {fill : 'red'});
 		this.title.font = "Press Start 2P";
-		this.title.fontSize = 24;
+		this.title.fontSize = 23;
 		this.title.align = 'center';
 		
-		this.sub = this.game.add.text(4, 64, str_sub+"\n ");
+		this.sub = this.game.add.text(4, 64, "\n" + str_sub + "\n ", {fill: 'pink'});
 		this.sub.font = "Press Start 2P";
 		
 		if (small) {
 			this.sub.fontSize = 18;
 		} else {
-			this.sub.fontSize = 64;
+			this.sub.fontSize = 32;
 		}
 		
 		this.sub.x = (this.game.width - this.sub.width) / 2;
@@ -994,7 +994,8 @@ Play.prototype = {
 				this.cashyo.fontSize = 16;
 				this.cashyo.fixedToCamera = true;
 				
-				this.pressspace = this.game.add.text(8, 340, 'F5 TO RETRY\n\nTHANKS FOR PLAYING!\nA GAME BY DREAM\nSHOW ADVENTURES\nFOR LUDUM DARE 29\n\nCODE: STEVE RICHEY\nART: ANDREW AGULTO', {fill: 'white'});
+				//this.pressspace = this.game.add.text(8, 340, 'F5 TO RETRY\n\nTHANKS FOR PLAYING!\nA GAME BY DREAM\nSHOW ADVENTURES\nFOR LUDUM DARE 29\n\nCODE: STEVE RICHEY\nART: ANDREW AGULTO', {fill: 'white'});
+				this.pressspace = this.game.add.text(8, 340, 'THANK YOU KOKOMOKO\nFOR PLAYING THIS\nGAME.\n\nLET ME MAKE THE MOST\nPRETTY GIRL SMILE\nALL THE TIME.\n\nPRESS F5 TO \nPLAY AGAIN', {fill: 'white'});
 				this.pressspace.font = "Press Start 2P";
 				this.pressspace.fontSize = 16;
 				this.pressspace.fixedToCamera = true;
