@@ -105,12 +105,12 @@ Menu.prototype = {
 		this.ground.scale.x = 2;
 		this.ground.scale.y = 2;
 		
-		this.title = this.game.add.text(8,8,'For girl with \nBest hairs', {fill : 'red'});
+		this.title = this.game.add.text(8,8,'For the girl\nwith Best hairs', {fill : 'red'});
 		this.title.font = "Press Start 2P";
-		this.title.fontSize = 24;
+		this.title.fontSize = 23;
 		this.title.align = 'center';
 		
-		this.sub = this.game.add.text(4, 64, str_sub+"\n ", {fill: 'pink'});
+		this.sub = this.game.add.text(4, 64, "\n" + str_sub + "\n ", {fill: 'pink'});
 		this.sub.font = "Press Start 2P";
 		
 		if (small) {

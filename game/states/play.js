@@ -288,7 +288,8 @@ Play.prototype = {
 				this.cashyo.fontSize = 16;
 				this.cashyo.fixedToCamera = true;
 				
-				this.pressspace = this.game.add.text(8, 340, 'F5 TO RETRY\n\nTHANKS FOR PLAYING!\nA GAME BY DREAM\nSHOW ADVENTURES\nFOR LUDUM DARE 29\n\nCODE: STEVE RICHEY\nART: ANDREW AGULTO', {fill: 'white'});
+				//this.pressspace = this.game.add.text(8, 340, 'F5 TO RETRY\n\nTHANKS FOR PLAYING!\nA GAME BY DREAM\nSHOW ADVENTURES\nFOR LUDUM DARE 29\n\nCODE: STEVE RICHEY\nART: ANDREW AGULTO', {fill: 'white'});
+				this.pressspace = this.game.add.text(8, 340, 'THANK YOU KOKOMOKO\nFOR PLAYING THIS\nGAME.\n\nLET ME MAKE THE MOST\nPRETTY GIRL SMILE\nALL THE TIME.\n\nPRESS F5 TO \nPLAY AGAIN', {fill: 'white'});
 				this.pressspace.font = "Press Start 2P";
 				this.pressspace.fontSize = 16;
 				this.pressspace.fixedToCamera = true;
